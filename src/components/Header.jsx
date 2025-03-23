@@ -143,9 +143,9 @@ function Header() {
               Contact
             </Link>
           </div>
-          <Link to="/" className="btn btn-primary rounded-pill py-2 px-4">
+          {/* <Link to="/" className="btn btn-primary rounded-pill py-2 px-4">
             Register
-          </Link>
+          </Link> */}
         </div>
       </nav>
     </div>

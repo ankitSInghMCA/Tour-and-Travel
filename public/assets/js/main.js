@@ -55,17 +55,40 @@
     
     
     // Back to top button
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
+    document.addEventListener("DOMContentLoaded", function () {
+        let scrollThreshold = window.innerHeight * 0.5; // Show after half the viewport height
+        let backToTop = document.querySelector(".back-to-top");
+        let backToTopWeb = document.querySelector(".back-to-top-web");
+    
+        // Ensure both buttons are hidden after page reload
+        backToTop.style.display = "none";
+        backToTopWeb.style.display = "none";
+    
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > scrollThreshold) {
+                backToTop.style.display = "block";
+                backToTopWeb.style.display = "block";
+            } else {
+                backToTop.style.display = "none";
+                backToTopWeb.style.display = "none";
+            }
+        });
+    
+        // Scroll to top and hide both buttons
+        backToTop.addEventListener("click", function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+    
+            // Hide buttons after scroll completes
+            setTimeout(() => {
+                backToTop.style.display = "none";
+                backToTopWeb.style.display = "none";
+            }, 600); // Adjust time to match the scroll animation
+        });
     });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
-        return false;
-    });
+    
+    
+    
 
 
     // Testimonials carousel

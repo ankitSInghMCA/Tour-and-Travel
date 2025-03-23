@@ -22,7 +22,19 @@
     z-index: 99;
 }
 
-
+.back-to-top-web{
+    position: fixed;
+    display: none;
+    right: 45px;
+    bottom: 115px !important;
+    z-index: 99;
+}
+.new-arrow-class{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -440,4 +452,8 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+#home-slider .tns-outer button{
+    display: none !important;
 }
