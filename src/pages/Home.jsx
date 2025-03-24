@@ -2,9 +2,12 @@ import React, { useState, useEffect } from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import Modal from "react-modal"; // Import react-modal
+import "bootstrap/dist/css/bootstrap.min.css";  // Import Bootstrap CSS
+import "bootstrap/dist/js/bootstrap.bundle.min"; // Import Bootstrap JS
 
-Modal.setAppElement("#root");
+import flatpickr from "flatpickr";
+import "flatpickr/dist/flatpickr.min.css";
+// Modal.setAppElement("#root");
 
 const options = {
   loop: true,
@@ -39,17 +42,12 @@ const homes = {
 export default function Home() {
 
 
-  const [modalIsOpen, setModalIsOpen] = useState(false);
 
   useEffect(() => {
-    // Set a timeout to open the modal after 5 seconds
-    const timer = setTimeout(() => {
-      console.log("Opening modal...");
-      setModalIsOpen(true);
-    }, 5000);
-
-    // Cleanup function to clear the timeout if component unmounts early
-    return () => clearTimeout(timer);
+    flatpickr("#datetime", {
+      enableTime: true,
+      dateFormat: "Y-m-d H:i",
+    });
   }, []);
 
   return (
@@ -107,46 +105,71 @@ export default function Home() {
       </div>
          {/* Inquiry Form Modal */}
 
-         <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={() => setModalIsOpen(false)}
-        style={{
-          overlay: {
-            backgroundColor: "rgba(0, 0, 0, 0.5)",
-            zIndex: 1000, // Ensures the modal appears on top
-          },
-          content: {
-            width: "400px",
-            margin: "auto",
-            padding: "20px",
-            borderRadius: "10px",
-            textAlign: "center",
-            zIndex: 1001, // Ensures the content is above the overlay
-          },
-        }}
-      >
-        <h2 className="text-xl font-bold mb-4">Inquiry Form</h2>
-        <form class="container p-4 bg-white rounded" >
-  <div class="mb-3 text-start">
-    <label for="name" class="form-label fw-semibold">Name</label>
-    <input type="text" class="form-control" id="name" placeholder="Enter your name"/>
-  </div>
-  <div class="mb-3 text-start">
-    <label for="number" class="form-label fw-semibold">Phone number</label>
-    <input type="number" class="form-control" id="name" placeholder="Enter your number"/>
-  </div>
-  
-  <div class="mb-3 text-start">
-    <label for="message" class="form-label fw-semibold">Message</label>
-    <textarea class="form-control" id="message" rows="4" placeholder="Your inquiry..."></textarea>
-  </div>
-  <button onClick={() => setModalIsOpen(false)} className="btn btn-primary pt-3 px-5 ">
-          Submit
-        </button>
-</form>
-
-       
-      </Modal>
+         {/* Bootstrap Modal */}
+      <div className="modal fade"
+        id="inquiryModal"
+        tabIndex="-1"
+        aria-labelledby="inquiryModalLabel"
+        aria-hidden="true">
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header bg-primary text-white">
+              <h5 className="modal-title" id="inquiryModalLabel">
+                Inquiry Form
+              </h5>
+              <button
+                type="button"
+                className="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body">
+              <form id="inquiryForm">
+                <div className="mb-3">
+                  <label htmlFor="name" className="form-label fw-semibold">
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="number" className="form-label fw-semibold">
+                    Phone Number
+                  </label>
+                  <input
+                    type="number"
+                    className="form-control"
+                    id="number"
+                    placeholder="Enter your number"
+                    required
+                  />
+                </div>
+                <div className="mb-3">
+                  <label htmlFor="message" className="form-label fw-semibold">
+                    Message
+                  </label>
+                  <textarea
+                    className="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="Your inquiry..."
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" className="btn btn-primary w-100">
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* Inquiry Form Modal */}
     
       {/* About Start */}
@@ -450,12 +473,11 @@ export default function Home() {
         <div className="container">
           <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
             <h6 className="section-title bg-white text-center text-primary px-3">
-              Packages
+            International
             </h6>
-            <h1 className="mb-5">Awesome Packages</h1>
+            <h1 className="mb-5">International Destinations</h1>
           </div>
-          <div className="row g-4 justify-content-center">
-            <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <OwlCarousel className="owl-theme" {...options}>
               <div className="package-item">
                 <div className="overflow-hidden">
                   <img className="img-fluid" src="assets/img/package-1.jpg" alt="" />
@@ -503,8 +525,8 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+           
+            
               <div className="package-item">
                 <div className="overflow-hidden">
                   <img className="img-fluid" src="assets/img/package-2.jpg" alt="" />
@@ -552,8 +574,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            
               <div className="package-item">
                 <div className="overflow-hidden">
                   <img className="img-fluid" src="assets/img/package-3.jpg" alt="" />
@@ -601,8 +622,259 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+              <div className="package-item">
+                <div className="overflow-hidden">
+                  <img className="img-fluid" src="assets/img/package-2.jpg" alt="" />
+                </div>
+                <div className="d-flex border-bottom">
+                  <small className="flex-fill text-center border-end py-2">
+                    <i className="fa fa-map-marker-alt text-primary me-2" />
+                    Indonesia
+                  </small>
+                  <small className="flex-fill text-center border-end py-2">
+                    <i className="fa fa-calendar-alt text-primary me-2" />3 days
+                  </small>
+                  <small className="flex-fill text-center py-2">
+                    <i className="fa fa-user text-primary me-2" />2 Person
+                  </small>
+                </div>
+                <div className="text-center p-4">
+                  <h3 className="mb-0">$139.00</h3>
+                  <div className="mb-3">
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                  </div>
+                  <p>
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
+                    diam amet diam eos
+                  </p>
+                  <div className="d-flex justify-content-center mb-2">
+                    <a
+                      href="#"
+                      className="btn btn-sm btn-primary px-3 border-end"
+                      style={{ borderRadius: "30px 0 0 30px" }}
+                    >
+                      Read More
+                    </a>
+                    <a
+                      href="#"
+                      className="btn btn-sm btn-primary px-3"
+                      style={{ borderRadius: "0 30px 30px 0" }}
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </OwlCarousel>
+      
+        </div>
+      </div>
+
+      <div className="container-xxl py-5">
+        <div className="container">
+          <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 className="section-title bg-white text-center text-primary px-3">
+            Domestic
+            </h6>
+            <h1 className="mb-5"> Domestic Destinations</h1>
           </div>
+          <OwlCarousel className="owl-theme" {...options}>
+              <div className="package-item">
+                <div className="overflow-hidden">
+                  <img className="img-fluid" src="assets/img/package-1.jpg" alt="" />
+                </div>
+                <div className="d-flex border-bottom">
+                  <small className="flex-fill text-center border-end py-2">
+                    <i className="fa fa-map-marker-alt text-primary me-2" />
+                    Thailand
+                  </small>
+                  <small className="flex-fill text-center border-end py-2">
+                    <i className="fa fa-calendar-alt text-primary me-2" />3 days
+                  </small>
+                  <small className="flex-fill text-center py-2">
+                    <i className="fa fa-user text-primary me-2" />2 Person
+                  </small>
+                </div>
+                <div className="text-center p-4">
+                  <h3 className="mb-0">$149.00</h3>
+                  <div className="mb-3">
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                  </div>
+                  <p>
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
+                    diam amet diam eos
+                  </p>
+                  <div className="d-flex justify-content-center mb-2">
+                    <a
+                      href="#"
+                      className="btn btn-sm btn-primary px-3 border-end"
+                      style={{ borderRadius: "30px 0 0 30px" }}
+                    >
+                      Read More
+                    </a>
+                    <a
+                      href="#"
+                      className="btn btn-sm btn-primary px-3"
+                      style={{ borderRadius: "0 30px 30px 0" }}
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+           
+            
+              <div className="package-item">
+                <div className="overflow-hidden">
+                  <img className="img-fluid" src="assets/img/package-2.jpg" alt="" />
+                </div>
+                <div className="d-flex border-bottom">
+                  <small className="flex-fill text-center border-end py-2">
+                    <i className="fa fa-map-marker-alt text-primary me-2" />
+                    Indonesia
+                  </small>
+                  <small className="flex-fill text-center border-end py-2">
+                    <i className="fa fa-calendar-alt text-primary me-2" />3 days
+                  </small>
+                  <small className="flex-fill text-center py-2">
+                    <i className="fa fa-user text-primary me-2" />2 Person
+                  </small>
+                </div>
+                <div className="text-center p-4">
+                  <h3 className="mb-0">$139.00</h3>
+                  <div className="mb-3">
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                  </div>
+                  <p>
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
+                    diam amet diam eos
+                  </p>
+                  <div className="d-flex justify-content-center mb-2">
+                    <a
+                      href="#"
+                      className="btn btn-sm btn-primary px-3 border-end"
+                      style={{ borderRadius: "30px 0 0 30px" }}
+                    >
+                      Read More
+                    </a>
+                    <a
+                      href="#"
+                      className="btn btn-sm btn-primary px-3"
+                      style={{ borderRadius: "0 30px 30px 0" }}
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            
+              <div className="package-item">
+                <div className="overflow-hidden">
+                  <img className="img-fluid" src="assets/img/package-3.jpg" alt="" />
+                </div>
+                <div className="d-flex border-bottom">
+                  <small className="flex-fill text-center border-end py-2">
+                    <i className="fa fa-map-marker-alt text-primary me-2" />
+                    Malaysia
+                  </small>
+                  <small className="flex-fill text-center border-end py-2">
+                    <i className="fa fa-calendar-alt text-primary me-2" />3 days
+                  </small>
+                  <small className="flex-fill text-center py-2">
+                    <i className="fa fa-user text-primary me-2" />2 Person
+                  </small>
+                </div>
+                <div className="text-center p-4">
+                  <h3 className="mb-0">$189.00</h3>
+                  <div className="mb-3">
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                  </div>
+                  <p>
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
+                    diam amet diam eos
+                  </p>
+                  <div className="d-flex justify-content-center mb-2">
+                    <a
+                      href="#"
+                      className="btn btn-sm btn-primary px-3 border-end"
+                      style={{ borderRadius: "30px 0 0 30px" }}
+                    >
+                      Read More
+                    </a>
+                    <a
+                      href="#"
+                      className="btn btn-sm btn-primary px-3"
+                      style={{ borderRadius: "0 30px 30px 0" }}
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="package-item">
+                <div className="overflow-hidden">
+                  <img className="img-fluid" src="assets/img/package-2.jpg" alt="" />
+                </div>
+                <div className="d-flex border-bottom">
+                  <small className="flex-fill text-center border-end py-2">
+                    <i className="fa fa-map-marker-alt text-primary me-2" />
+                    Indonesia
+                  </small>
+                  <small className="flex-fill text-center border-end py-2">
+                    <i className="fa fa-calendar-alt text-primary me-2" />3 days
+                  </small>
+                  <small className="flex-fill text-center py-2">
+                    <i className="fa fa-user text-primary me-2" />2 Person
+                  </small>
+                </div>
+                <div className="text-center p-4">
+                  <h3 className="mb-0">$139.00</h3>
+                  <div className="mb-3">
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                    <small className="fa fa-star text-primary" />
+                  </div>
+                  <p>
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
+                    diam amet diam eos
+                  </p>
+                  <div className="d-flex justify-content-center mb-2">
+                    <a
+                      href="#"
+                      className="btn btn-sm btn-primary px-3 border-end"
+                      style={{ borderRadius: "30px 0 0 30px" }}
+                    >
+                      Read More
+                    </a>
+                    <a
+                      href="#"
+                      className="btn btn-sm btn-primary px-3"
+                      style={{ borderRadius: "0 30px 30px 0" }}
+                    >
+                      Book Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+          </OwlCarousel>
         </div>
       </div>
       {/* Package End */}
@@ -635,7 +907,7 @@ export default function Home() {
                       <div className="form-floating">
                         <input
                           type="text"
-                          className="form-control bg-transparent"
+                          className="form-control bg-white"
                           id="name"
                           placeholder="Your Name"
                         />
@@ -646,7 +918,7 @@ export default function Home() {
                       <div className="form-floating">
                         <input
                           type="email"
-                          className="form-control bg-transparent"
+                          className=" form-control bg-white"
                           id="email"
                           placeholder="Your Email"
                         />
@@ -654,26 +926,20 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="col-md-6">
-                      <div
-                        className="form-floating date"
-                        id="date3"
-                        data-target-input="nearest"
-                      >
-                        <input
-                          type="text"
-                          className="form-control bg-transparent datetimepicker-input"
-                          id="datetime"
-                          placeholder="Date & Time"
-                          data-target="#date3"
-                          data-toggle="datetimepicker"
-                        />
-                        <label htmlFor="datetime">Date &amp; Time</label>
-                      </div>
-                    </div>
+      <div className="form-floating">
+        <input
+          type="text"
+          className="form-control bg-white"
+          id="datetime"
+          placeholder="Date & Time"
+        />
+        <label htmlFor="datetime">Date & Time</label>
+      </div>
+    </div>
                     <div className="col-md-6">
                       <div className="form-floating">
                         <select
-                          className="form-select bg-transparent"
+                          className="form-control bg-white"
                           id="select1"
                         >
                           <option value={1}>Destination 1</option>
@@ -686,7 +952,7 @@ export default function Home() {
                     <div className="col-12">
                       <div className="form-floating">
                         <textarea
-                          className="form-control bg-transparent"
+                          className="form-control bg-white"
                           placeholder="Special Request"
                           id="message"
                           style={{ height: 100 }}
@@ -697,7 +963,7 @@ export default function Home() {
                     </div>
                     <div className="col-12">
                       <button
-                        className="btn btn-outline-light w-100 py-3"
+                        className="btn btn-outline-light  w-100 py-3"
                         type="submit"
                       >
                         Book Now
@@ -790,9 +1056,9 @@ export default function Home() {
   <div className="container">
     <div className="text-center">
       <h6 className="section-title bg-white text-center text-primary px-3">
-        Upcoming Trip
+      Spiritual
       </h6>
-      <h1 className="mb-5">Explore Our Next Adventures!</h1>
+      <h1 className="mb-5">spiritual destinations</h1>
     </div>
     <OwlCarousel className="owl-theme" {...options}>
     <div className="package-item">
@@ -1048,11 +1314,11 @@ export default function Home() {
             </h6>
             <h1 className="mb-5">Meet Our Guide</h1>
           </div>
-          {/* <div className="row g-4">
+          <div className="row g-4">
             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div className="team-item">
                 <div className="overflow-hidden">
-                  <img className="img-fluid" src="assets/img/IMG-20250322-WA0013.jpg" alt="" />
+                  <img className="img-fluid" src="assets/img/mewt1.png" alt="" />
                 </div>
                 <div
                   className="position-relative d-flex justify-content-center"
@@ -1077,7 +1343,7 @@ export default function Home() {
             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
               <div className="team-item">
                 <div className="overflow-hidden">
-                  <img className="img-fluid" src="assets/img/IMG-20250322-WA0023.jpg" alt="" />
+                  <img className="img-fluid" src="assets/img/newt2.png" alt="" />
                 </div>
                 <div
                   className="position-relative d-flex justify-content-center"
@@ -1102,7 +1368,7 @@ export default function Home() {
             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
               <div className="team-item">
                 <div className="overflow-hidden">
-                  <img className="img-fluid" src="assets/IMG-20250322-WA0012.jpg" alt="" />
+                  <img className="img-fluid" src="assets/img/newt3.png" alt="" />
                 </div>
                 <div
                   className="position-relative d-flex justify-content-center"
@@ -1127,7 +1393,7 @@ export default function Home() {
             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
               <div className="team-item">
                 <div className="overflow-hidden">
-                  <img className="img-fluid" src="assets/img/IMG-20241021-WA0008.jpg" alt="" />
+                  <img className="img-fluid" src="assets/img/newt4.png" alt="" />
                 </div>
                 <div
                   className="position-relative d-flex justify-content-center"
@@ -1149,9 +1415,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
+
+
+     
       {/* Team End */}
       {/* Testimonial Start */}
       <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">

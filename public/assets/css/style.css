@@ -31,7 +31,7 @@
 }
 .new-arrow-class{
     display: flex;
-    align-items: center;
+    align-items : center;
     justify-content: center;
     height: 100%;
 }
@@ -95,13 +95,16 @@
     position: relative;
     margin-right: 25px;
     padding: 35px 0;
-    color: #FFFFFF !important;
+    color: rgba(0,0,0,0.55) !important;
     font-size: 18px;
     font-weight: 600;
     outline: none;
     transition: .5s;
 }
-
+.btn-close-white {
+    filter: invert(1); /* Inverts the default black to white */
+  }
+  
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
     color: var(--dark) !important;
@@ -242,7 +245,7 @@
 }
 
 .service-item:hover {
-    background: var(--primary);
+    background: #0d6efd !important;
 }
 
 .service-item * {
@@ -266,7 +269,7 @@
 
 /*** Package ***/
 .package-item {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    border: 1px solid  rgba(0, 0, 0, .08);
 }
 
 .package-item img {
