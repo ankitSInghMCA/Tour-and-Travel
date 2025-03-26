@@ -460,3 +460,26 @@
 #home-slider .tns-outer button{
     display: none !important;
 }
+
+
+.accordion-button:focus{
+    box-shadow: none !important;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #FFFFFF !important;
+    background-color: #0d6efd !important;
+    border-color:transparent !important;
+    box-shadow: none !important;
+}
+.width-sectuon{
+    height: 100vh;
+}
+.new-puffer span{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+}

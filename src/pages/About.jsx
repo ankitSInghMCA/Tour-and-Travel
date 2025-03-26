@@ -112,7 +112,7 @@ function About() {
             <h6 className="section-title bg-white text-start text-primary pe-3">
               About Us
             </h6>
-            <h1 className="mb-4">Welcome to <span className="text-primary">Tourist</span></h1>
+            <h1 className="mb-4">Welcome to <span className="text-primary">Raghuwanshi Travel</span></h1>
             <p>We offer premium travel experiences, curated to provide the best adventures for our clients.</p>
             <ul>
               <li>First Class Flights</li>

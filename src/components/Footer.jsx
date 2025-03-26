@@ -32,15 +32,15 @@ export default function Footer() {
             <h4 className="text-white mb-3">Contact</h4>
             <p className="mb-2">
               <i className="fa fa-map-marker-alt me-3" />
-              123 Street, New York, USA
+              Moti nagar sagore, Dhar, MP
             </p>
             <p className="mb-2">
               <i className="fa fa-phone-alt me-3" />
-              +012 345 67890
+              +91 9589440554
             </p>
             <p className="mb-2">
               <i className="fa fa-envelope me-3" />
-              info@example.com
+              Raghuwanshitravels09@gmail.com
             </p>
             <div className="d-flex pt-2">
               <a className="btn btn-outline-light btn-social" href="/">

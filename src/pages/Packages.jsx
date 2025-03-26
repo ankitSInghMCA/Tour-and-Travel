@@ -220,7 +220,7 @@ function Packages() {
       <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
         <div className="package-item">
           <div className="overflow-hidden">
-            <img className="img-fluid" src="assets/img/desti/Atv.png" alt="Rishikesh Adventure" />
+            <img className="img-fluid" src="assets/img/desti/Untitled design (7).png" alt="Rishikesh Adventure" />
           </div>
           <div className="d-flex border-bottom">
             <small className="flex-fill text-center border-end py-2">
@@ -277,7 +277,7 @@ function Packages() {
       <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
         <div className="package-item">
           <div className="overflow-hidden">
-            <img className="img-fluid" src="assets/img/desti/bonfire.png" alt="Jungle Safari" />
+            <img className="img-fluid" src="assets/img/desti/Untitled design (8).png" alt="Jungle Safari" />
           </div>
           <div className="d-flex border-bottom">
             <small className="flex-fill text-center border-end py-2">
@@ -333,7 +333,7 @@ function Packages() {
       <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
         <div className="package-item">
           <div className="overflow-hidden">
-            <img className="img-fluid" src="assets/img/desti/camping.png" alt="Jungle Safari" />
+            <img className="img-fluid" src="assets/img/desti/Untitled design (9).png" alt="Jungle Safari" />
           </div>
           <div className="d-flex border-bottom">
             <small className="flex-fill text-center border-end py-2">
@@ -361,7 +361,7 @@ function Packages() {
       <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
         <div className="package-item">
           <div className="overflow-hidden">
-            <img className="img-fluid" src="assets/img/desti/rafting.png" alt="Jungle Safari" />
+            <img className="img-fluid" src="assets/img/desti/Untitled design (10).png" alt="Jungle Safari" />
           </div>
           <div className="d-flex border-bottom">
             <small className="flex-fill text-center border-end py-2">
@@ -389,7 +389,7 @@ function Packages() {
       <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
         <div className="package-item">
           <div className="overflow-hidden">
-            <img className="img-fluid" src="assets/img/desti/desert.jpg" alt="Jungle Safari" />
+            <img className="img-fluid" src="assets/img/desti/Untitled design (11).png" alt="Jungle Safari" />
           </div>
           <div className="d-flex border-bottom">
             <small className="flex-fill text-center border-end py-2">
@@ -413,6 +413,62 @@ function Packages() {
           </div>
         </div>
       </div>
+      <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div className="package-item">
+          <div className="overflow-hidden">
+            <img className="img-fluid" src="assets/img/desti/Untitled design (12).png" alt="Jungle Safari" />
+          </div>
+          <div className="d-flex border-bottom">
+            <small className="flex-fill text-center border-end py-2">
+              <i className="fa fa-map-marker-alt text-primary me-2" />
+              Jim Corbett
+            </small>
+            <small className="flex-fill text-center border-end py-2">
+              <i className="fa fa-calendar-alt text-primary me-2" />2 days
+            </small>
+            <small className="flex-fill text-center py-2">
+              <i className="fa fa-user text-primary me-2" />4 Person
+            </small>
+          </div>
+          <div className="text-center p-4">
+            <h3 className="mb-0">$249.00</h3>
+            <p>Spot tigers and enjoy a thrilling wildlife safari in the jungle.</p>
+            <div className="d-flex justify-content-center mb-2">
+              <a href="#" className="btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: "30px 0 0 30px" }}>Read More</a>
+              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "0 30px 30px 0" }}>Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div className="package-item">
+          <div className="overflow-hidden">
+            <img className="img-fluid" src="assets/img/desti/Untitled design (13).png" alt="Jungle Safari" />
+          </div>
+          <div className="d-flex border-bottom">
+            <small className="flex-fill text-center border-end py-2">
+              <i className="fa fa-map-marker-alt text-primary me-2" />
+              Jim Corbett
+            </small>
+            <small className="flex-fill text-center border-end py-2">
+              <i className="fa fa-calendar-alt text-primary me-2" />2 days
+            </small>
+            <small className="flex-fill text-center py-2">
+              <i className="fa fa-user text-primary me-2" />4 Person
+            </small>
+          </div>
+          <div className="text-center p-4">
+            <h3 className="mb-0">$249.00</h3>
+            <p>Spot tigers and enjoy a thrilling wildlife safari in the jungle.</p>
+            <div className="d-flex justify-content-center mb-2">
+              <a href="#" className="btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: "30px 0 0 30px" }}>Read More</a>
+              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "0 30px 30px 0" }}>Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+     
     </div> {/* End Adventure Section */}
 
     {/* Spiritual Packages Section */}
@@ -793,8 +849,7 @@ function Packages() {
               <hr className="w-25 mx-auto bg-primary mb-1" />
               <hr className="w-50 mx-auto bg-primary mt-0" />
               <p className="mb-0">
-                Tempor erat elitr rebum clita dolor diam ipsum sit diam amet
-                diam eos erat ipsum et lorem et sit sed stet lorem sit
+              Explore top destinations worldwide, from tropical beaches to historic cities, offering unique experiences in adventure, culture, and relaxation to suit every traveler’s desires.
               </p>
             </div>
           </div>
@@ -813,8 +868,7 @@ function Packages() {
               <hr className="w-25 mx-auto bg-primary mb-1" />
               <hr className="w-50 mx-auto bg-primary mt-0" />
               <p className="mb-0">
-                Tempor erat elitr rebum clita dolor diam ipsum sit diam amet
-                diam eos erat ipsum et lorem et sit sed stet lorem sit
+              Pay online securely through our easy-to-use payment system, offering multiple payment options, ensuring a smooth and safe transaction for your bookings and reservations.
               </p>
             </div>
           </div>
@@ -829,12 +883,11 @@ function Packages() {
               >
                 <i className="fa fa-plane fa-3x text-white" />
               </div>
-              <h5 className="mt-4">Fly Today</h5>
+              <h5 className="mt-4">Get Ready, Travel</h5>
               <hr className="w-25 mx-auto bg-primary mb-1" />
               <hr className="w-50 mx-auto bg-primary mt-0" />
               <p className="mb-0">
-                Tempor erat elitr rebum clita dolor diam ipsum sit diam amet
-                diam eos erat ipsum et lorem et sit sed stet lorem sit
+              Plan today and secure your next adventure with ease. Enjoy exclusive deals, flexible options, and a hassle-free booking experience for your flights, hotels, trains, and tours.
               </p>
             </div>
           </div>
