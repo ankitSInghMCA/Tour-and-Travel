@@ -102,10 +102,10 @@ function About() {
         <div className="row g-5">
           <div className="col-lg-6" style={{ minHeight: 400 }}>
             <img
-              className="img-fluid w-100 h-100"
-              src="assets/img/about.jpg"
+              className="img-fluid mw-100 h-100"
+              src="assets/img/desti/about.png"
               alt="About Us"
-              style={{ objectFit: "cover" }}
+              // style={{ objectFit: "cover" }}
             />
           </div>
           <div className="col-lg-6">
@@ -126,7 +126,7 @@ function About() {
           </div>
         </div>
       </div>
-
+   
       <div className=" py-4">
         <div className="container ">
           <div className="text-center">
@@ -153,18 +153,91 @@ function About() {
         </div>
       </div>
 
-        {/* Travel Guide Section */}
-        <div className="container-xxl py-5">
+      <div class="container">
+        {/* <h2 class="text-center mb-4">Why Choose <span class="text-primary"></span></h2> */}
+        <div className="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+            <h6 className="section-title bg-white text-center text-primary px-3">
+            Why Choose?
+            </h6>
+            <h1 className="mb-5"> Raghuwanshi Travel</h1>
+          </div>
+          <div class="row g-4">
+    <div class="col-md-4 d-flex wow fadeInUp" data-wow-delay="0.3s">
+        <div class="card shadow text-center p-3 h-100">
+            <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+            <div class="card-body">
+                <h5 class="card-title">Experienced & Trusted</h5>
+                <p class="card-text">With years of experience, we ensure a seamless and memorable travel journey.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 d-flex wow fadeInUp" data-wow-delay="0.5s">
+        <div class="card shadow text-center p-3 h-100">
+            <i class="fas fa-car fa-3x text-primary mb-3"></i>
+            <div class="card-body">
+                <h5 class="card-title">Comfortable & Safe Rides</h5>
+                <p class="card-text">Our well-maintained fleet and professional drivers prioritize safety and comfort.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 d-flex wow fadeInUp" data-wow-delay="0.7s">
+        <div class="card shadow text-center p-3 h-100">
+            <i class="fas fa-money-bill-wave fa-3x text-primary mb-3"></i>
+            <div class="card-body">
+                <h5 class="card-title">Affordable Pricing</h5>
+                <p class="card-text">We offer budget-friendly travel options with no hidden charges.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 d-flex wow fadeInUp" data-wow-delay="0.9s">
+        <div class="card shadow text-center p-3 h-100">
+            <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+            <div class="card-body">
+                <h5 class="card-title">24/7 Customer Support</h5>
+                <p class="card-text">Our support team is available round the clock for all your travel needs.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 d-flex wow fadeInUp" data-wow-delay="0.11s">
+        <div class="card shadow text-center p-3 h-100">
+            <i class="fas fa-globe fa-3x text-primary mb-3"></i>
+            <div class="card-body">
+                <h5 class="card-title">Wide Range of Services</h5>
+                <p class="card-text">From local trips to corporate and pilgrimage tours, we cover it all!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 d-flex wow fadeInUp" data-wow-delay="0.13s">
+        <div class="card shadow text-center p-3 h-100">
+            <i class="fas fa-users fa-3x text-primary mb-3"></i>
+            <div class="card-body">
+                <h5 class="card-title">Customized Travel Plans</h5>
+                <p class="card-text">We personalize travel experiences to match your unique needs.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+         {/* Team Start */}
+      <div className="container-xxl py-5">
         <div className="container">
-          <div className="text-center">
-            <h6 className="section-title bg-white text-center text-primary px-3">Travel Guide</h6>
+          <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 className="section-title bg-white text-center text-primary px-3">
+              Travel Guide
+            </h6>
             <h1 className="mb-5">Meet Our Guide</h1>
           </div>
           <div className="row g-4">
             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
               <div className="team-item">
                 <div className="overflow-hidden">
-                  <img className="img-fluid" src="assets/img/mewt1.png" alt="" />
+                  <img className="img-fluid w-100" src="assets/img/mewt1.png" alt="" />
                 </div>
                 <div
                   className="position-relative d-flex justify-content-center"
@@ -181,15 +254,15 @@ function About() {
                   </a>
                 </div>
                 <div className="text-center p-4">
-                  <h5 className="mb-0">Full Name</h5>
-                  <small>Designation</small>
+                  <h5 className="mb-0">Deepak raghuwanshi </h5>
+                  <small>owner </small>
                 </div>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
               <div className="team-item">
                 <div className="overflow-hidden">
-                  <img className="img-fluid" src="assets/img/newt2.png" alt="" />
+                  <img className="img-fluid w-100" src="assets/img/newt2.png" alt="" />
                 </div>
                 <div
                   className="position-relative d-flex justify-content-center"
@@ -206,15 +279,16 @@ function About() {
                   </a>
                 </div>
                 <div className="text-center p-4">
-                  <h5 className="mb-0">Full Name</h5>
-                  <small>Designation</small>
+                  <h5 className="mb-0"> Kavita Raghuvanshi 
+                  </h5>
+                  <small>Guides </small>
                 </div>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
               <div className="team-item">
                 <div className="overflow-hidden">
-                  <img className="img-fluid" src="assets/img/newt3.png" alt="" />
+                  <img className="img-fluid w-100" src="assets/img/newt3.png" alt="" />
                 </div>
                 <div
                   className="position-relative d-flex justify-content-center"
@@ -231,15 +305,15 @@ function About() {
                   </a>
                 </div>
                 <div className="text-center p-4">
-                  <h5 className="mb-0">Full Name</h5>
-                  <small>Designation</small>
+                  <h5 className="mb-0"> Ankit raghuwanshi </h5>
+                  <small>Trip planner</small>
                 </div>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
               <div className="team-item">
                 <div className="overflow-hidden">
-                  <img className="img-fluid" src="assets/img/newt4.png" alt="" />
+                  <img className="img-fluid w-100" src="assets/img/newt4.png" alt="" />
                 </div>
                 <div
                   className="position-relative d-flex justify-content-center"
@@ -256,8 +330,9 @@ function About() {
                   </a>
                 </div>
                 <div className="text-center p-4">
-                  <h5 className="mb-0">Full Name</h5>
-                  <small>Designation</small>
+                  <h5 className="mb-0"> Vineet Raghuvanshi 
+                  </h5>
+                  <small>Guides</small>
                 </div>
               </div>
             </div>

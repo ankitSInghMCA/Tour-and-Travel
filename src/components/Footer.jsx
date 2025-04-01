@@ -35,13 +35,18 @@ export default function Footer() {
               Moti nagar sagore, Dhar, MP
             </p>
             <p className="mb-2">
-              <i className="fa fa-phone-alt me-3" />
-              +91 9589440554
-            </p>
-            <p className="mb-2">
-              <i className="fa fa-envelope me-3" />
-              Raghuwanshitravels09@gmail.com
-            </p>
+  <i className="fa fa-phone-alt me-3" />
+  <a href="tel:+919589440554" style={{ textDecoration: 'none', color: 'inherit' }}>
+    +91 9589440554
+  </a>
+</p>
+<p className="mb-2">
+  <i className="fa fa-envelope me-3" />
+  <a href="mailto:Raghuwanshitravels09@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}>
+    Raghuwanshitravels09@gmail.com
+  </a>
+</p>
+
             <div className="d-flex pt-2">
               <a className="btn btn-outline-light btn-social" href="/">
                 <i className="fab fa-twitter" />
@@ -106,7 +111,7 @@ export default function Footer() {
           </div>
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-3">Newsletter</h4>
-            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <p> Get the latest updates and offers directly to your inbox.</p>
             <div
               className="position-relative mx-auto"
               style={{ maxWidth: 400 }}
@@ -120,13 +125,13 @@ export default function Footer() {
                 type="button"
                 className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
               >
-                SignUp
+                Subscribe
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div className="container">
+      {/* <div className="container">
         <div className="copyright">
           <div className="row">
             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
@@ -150,7 +155,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
     {/* Footer End */}
     </div>

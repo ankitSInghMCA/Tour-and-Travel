@@ -53,10 +53,142 @@ function Packages() {
           <h1 className="mb-5">International Destinations</h1>
         </div>
         <div className="row g-4 justify-content-center">
-          <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div className="package-item">
+          <div className="col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay="0.1s">
+          <div className="package-item">
               <div className="overflow-hidden">
-                <img className="img-fluid" src="assets/img/package-1.jpg" alt="" />
+                <img className="img-fluid w-100" src="assets/img/desti/it1.png" alt="" />
+              </div>
+              <div className="d-flex border-bottom">
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-map-marker-alt text-primary me-2" />
+                  Bali
+                </small>
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-calendar-alt text-primary me-2" />3 days
+                </small>
+                <small className="flex-fill text-center py-2">
+                  <i className="fa fa-user text-primary me-2" />2 Person
+                </small>
+              </div>
+              <div className="text-center p-4">
+                {/* <h3 className="mb-0">₹149.00</h3> */}
+                <div className="mb-3">
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                </div>
+                <p>
+                Visit Tanah Lot Temple,through Ubud’s rice fields, enjoy Bali nightlife, and experience Bali’s culture with Raghuwanshi Travel.
+                </p>
+                <div className="d-flex justify-content-center mb-2">
+                  {/* <a
+                    href="#"
+                    className="btn btn-sm btn-primary px-3 border-end"
+                    style={{ borderRadius: "30px 0 0 30px" }}
+                  >
+                    Read More
+                  </a> */}
+                  <a
+                    href="#"
+                    className="btn btn-sm btn-primary px-3"
+                    style={{ borderRadius: "30px" }}
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </div>
+
+           
+          </div>
+          <div className="col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay="0.3s">
+          <div className="package-item">
+              <div className="overflow-hidden">
+                <img className="img-fluid w-100" src="assets/img/desti/it5.png" alt="" />
+              </div>
+              <div className="d-flex border-bottom">
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-map-marker-alt text-primary me-2" />
+                Dubai
+                </small>
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-calendar-alt text-primary me-2" />3 days
+                </small>
+                <small className="flex-fill text-center py-2">
+                  <i className="fa fa-user text-primary me-2" />2 Person
+                </small>
+              </div>
+              <div className="text-center p-4">
+                {/* <h3 className="mb-0">₹139.00</h3> */}
+                <div className="mb-3">
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                </div>
+                <p>
+                See Burj Khalifa, shop at Dubai Mall, experience desert safaris, and relax at Palm Jumeirah with Raghuwanshi Travel.
+                </p>
+                <div className="d-flex justify-content-center mb-2">
+                <a
+                    href="#"
+                    className="btn btn-sm btn-primary px-3"
+                    style={{ borderRadius: "30px" }}
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay="0.5s">
+          <div className="package-item">
+              <div className="overflow-hidden">
+                <img className="img-fluid w-100" src="assets/img/desti/it4.png" alt="" />
+              </div>
+              <div className="d-flex border-bottom">
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-map-marker-alt text-primary me-2" />
+                  Maldives
+                </small>
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-calendar-alt text-primary me-2" />3 days
+                </small>
+                <small className="flex-fill text-center py-2">
+                  <i className="fa fa-user text-primary me-2" />2 Person
+                </small>
+              </div>
+              <div className="text-center p-4">
+                {/* <h3 className="mb-0">₹139.00</h3> */}
+                <div className="mb-3">
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                </div>
+                <p>
+                Relax on pristine beaches, explore coral reefs, stay in overwater villas, and enjoy luxury resorts with Raghuwanshi Travel.
+                </p>
+                <div className="d-flex justify-content-center mb-2">
+                <a
+                    href="#"
+                    className="btn btn-sm btn-primary px-3"
+                    style={{ borderRadius: "30px" }}
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay="0.7s">
+          <div className="package-item">
+              <div className="overflow-hidden">
+                <img className="img-fluid w-100" src="assets/img/desti/it2.png" alt="" />
               </div>
               <div className="d-flex border-bottom">
                 <small className="flex-fill text-center border-end py-2">
@@ -71,7 +203,7 @@ function Packages() {
                 </small>
               </div>
               <div className="text-center p-4">
-                <h3 className="mb-0">$149.00</h3>
+                {/* <h3 className="mb-0">₹139.00</h3> */}
                 <div className="mb-3">
                   <small className="fa fa-star text-primary" />
                   <small className="fa fa-star text-primary" />
@@ -80,21 +212,13 @@ function Packages() {
                   <small className="fa fa-star text-primary" />
                 </div>
                 <p>
-                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
-                  diam amet diam eos
+                Visit Bangkok’s temples, relax on Phuket’s beaches, explore floating markets, and enjoy Thai street food with Raghuwanshi Travel .
                 </p>
                 <div className="d-flex justify-content-center mb-2">
-                  <a
-                    href="#"
-                    className="btn btn-sm btn-primary px-3 border-end"
-                    style={{ borderRadius: "30px 0 0 30px" }}
-                  >
-                    Read More
-                  </a>
-                  <a
+                <a
                     href="#"
                     className="btn btn-sm btn-primary px-3"
-                    style={{ borderRadius: "0 30px 30px 0" }}
+                    style={{ borderRadius: "30px" }}
                   >
                     Book Now
                   </a>
@@ -102,15 +226,19 @@ function Packages() {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div className="col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay="0.9s">
+                    
+
+            
+
             <div className="package-item">
               <div className="overflow-hidden">
-                <img className="img-fluid" src="assets/img/package-2.jpg" alt="" />
+                <img className="img-fluid w-100" src="assets/img/desti/it3.png" alt="" />
               </div>
               <div className="d-flex border-bottom">
                 <small className="flex-fill text-center border-end py-2">
                   <i className="fa fa-map-marker-alt text-primary me-2" />
-                  Indonesia
+                 Singapore
                 </small>
                 <small className="flex-fill text-center border-end py-2">
                   <i className="fa fa-calendar-alt text-primary me-2" />3 days
@@ -120,7 +248,7 @@ function Packages() {
                 </small>
               </div>
               <div className="text-center p-4">
-                <h3 className="mb-0">$139.00</h3>
+                {/* <h3 className="mb-0">₹189.00</h3> */}
                 <div className="mb-3">
                   <small className="fa fa-star text-primary" />
                   <small className="fa fa-star text-primary" />
@@ -129,76 +257,20 @@ function Packages() {
                   <small className="fa fa-star text-primary" />
                 </div>
                 <p>
-                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
-                  diam amet diam eos
+                Explore Marina Bay Sands, visit Sentosa Island, shop on Orchard Road, and enjoy Night Safari and adventure with Raghuwanshi Travel.
                 </p>
                 <div className="d-flex justify-content-center mb-2">
-                  <a
-                    href="#"
-                    className="btn btn-sm btn-primary px-3 border-end"
-                    style={{ borderRadius: "30px 0 0 30px" }}
-                  >
-                    Read More
-                  </a>
-                  <a
+                <a
                     href="#"
                     className="btn btn-sm btn-primary px-3"
-                    style={{ borderRadius: "0 30px 30px 0" }}
+                    style={{ borderRadius: "30px" }}
                   >
                     Book Now
                   </a>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div className="package-item">
-              <div className="overflow-hidden">
-                <img className="img-fluid" src="assets/img/package-3.jpg" alt="" />
-              </div>
-              <div className="d-flex border-bottom">
-                <small className="flex-fill text-center border-end py-2">
-                  <i className="fa fa-map-marker-alt text-primary me-2" />
-                  Malaysia
-                </small>
-                <small className="flex-fill text-center border-end py-2">
-                  <i className="fa fa-calendar-alt text-primary me-2" />3 days
-                </small>
-                <small className="flex-fill text-center py-2">
-                  <i className="fa fa-user text-primary me-2" />2 Person
-                </small>
-              </div>
-              <div className="text-center p-4">
-                <h3 className="mb-0">$189.00</h3>
-                <div className="mb-3">
-                  <small className="fa fa-star text-primary" />
-                  <small className="fa fa-star text-primary" />
-                  <small className="fa fa-star text-primary" />
-                  <small className="fa fa-star text-primary" />
-                  <small className="fa fa-star text-primary" />
-                </div>
-                <p>
-                  Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
-                  diam amet diam eos
-                </p>
-                <div className="d-flex justify-content-center mb-2">
-                  <a
-                    href="#"
-                    className="btn btn-sm btn-primary px-3 border-end"
-                    style={{ borderRadius: "30px 0 0 30px" }}
-                  >
-                    Read More
-                  </a>
-                  <a
-                    href="#"
-                    className="btn btn-sm btn-primary px-3"
-                    style={{ borderRadius: "0 30px 30px 0" }}
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -217,15 +289,15 @@ function Packages() {
     <div className="row g-4 justify-content-center">
       
       {/* Rishikesh Adventure */}
-      <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+      <div className="col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay="0.1s">
         <div className="package-item">
           <div className="overflow-hidden">
-            <img className="img-fluid" src="assets/img/desti/Untitled design (7).png" alt="Rishikesh Adventure" />
+            <img className="img-fluid w-100" src="assets/img/desti/Untitled design (7).png" alt="Rishikesh Adventure" />
           </div>
           <div className="d-flex border-bottom">
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-map-marker-alt text-primary me-2" />
-              Rishikesh
+             ATV Ride
             </small>
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-calendar-alt text-primary me-2" />3 days
@@ -235,26 +307,26 @@ function Packages() {
             </small>
           </div>
           <div className="text-center p-4">
-            <h3 className="mb-0">$199.00</h3>
-            <p>Experience river rafting, bungee jumping, and camping under the stars.</p>
+            {/* <h3 className="mb-0">₹199.00</h3> */}
+            <p>Explore rugged terrains and scenic landscapes on an exhilarating ATV ride. Feel the rush of adrenaline as you navigate challenging trails and enjoy the thrill of off-roading.</p>
             <div className="d-flex justify-content-center mb-2">
-              <a href="#" className="btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: "30px 0 0 30px" }}>Read More</a>
-              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "0 30px 30px 0" }}>Book Now</a>
+              {/* <a href="#" className="btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: "30px 0 0 30px" }}>Read More</a> */}
+              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "30px" }}>Book Now</a>
             </div>
           </div>
         </div>
       </div>
 
       {/* Jungle Safari */}
-      <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+      <div className="col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay="0.3s">
         <div className="package-item">
           <div className="overflow-hidden">
-            <img className="img-fluid" src="assets/img/jungle-safari.jpg" alt="Jungle Safari" />
+            <img className="img-fluid w-100" src="assets/img/jungle-safari.jpg" alt="Jungle Safari" />
           </div>
           <div className="d-flex border-bottom">
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-map-marker-alt text-primary me-2" />
-              Jim Corbett
+              Jungle Safari
             </small>
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-calendar-alt text-primary me-2" />2 days
@@ -264,25 +336,24 @@ function Packages() {
             </small>
           </div>
           <div className="text-center p-4">
-            <h3 className="mb-0">$249.00</h3>
-            <p>Spot tigers and enjoy a thrilling wildlife safari in the jungle.</p>
+            {/* <h3 className="mb-0">₹249.00</h3> */}
+            <p>Embark on a thrilling jungle safari. Discover exotic wildlife, lush forests, and natural beauty as you venture into the wilderness for an unforgettable adventure.</p>
             <div className="d-flex justify-content-center mb-2">
-              <a href="#" className="btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: "30px 0 0 30px" }}>Read More</a>
-              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "0 30px 30px 0" }}>Book Now</a>
+              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "30px" }}>Book Now</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+      <div className="col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay="0.5s">
         <div className="package-item">
           <div className="overflow-hidden">
-            <img className="img-fluid" src="assets/img/desti/Untitled design (8).png" alt="Jungle Safari" />
+            <img className="img-fluid w-100" src="assets/img/desti/Untitled design (8).png" alt="Jungle Safari" />
           </div>
           <div className="d-flex border-bottom">
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-map-marker-alt text-primary me-2" />
-              Jim Corbett
+              Bonfire
             </small>
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-calendar-alt text-primary me-2" />2 days
@@ -292,25 +363,26 @@ function Packages() {
             </small>
           </div>
           <div className="text-center p-4">
-            <h3 className="mb-0">$249.00</h3>
-            <p>Spot tigers and enjoy a thrilling wildlife safari in the jungle.</p>
+            {/* <h3 className="mb-0">₹249.00</h3> */}
+           
+           <p>Embark on a thrilling jungle safari. Discover exotic wildlife, lush forests, and natural beauty as you venture into the wilderness for an unforgettable adventure.</p>
             <div className="d-flex justify-content-center mb-2">
-              <a href="#" className="btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: "30px 0 0 30px" }}>Read More</a>
-              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "0 30px 30px 0" }}>Book Now</a>
+             
+              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "30px" }}>Book Now</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+      <div className="col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay="0.7s">
         <div className="package-item">
           <div className="overflow-hidden">
-            <img className="img-fluid" src="assets/img/ladakh.jpg" alt="Jungle Safari" />
+            <img className="img-fluid w-100" src="assets/img/desti/Untitled design (9).png" alt="Jungle Safari" />
           </div>
           <div className="d-flex border-bottom">
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-map-marker-alt text-primary me-2" />
-              Jim Corbett
+              Night Camping
             </small>
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-calendar-alt text-primary me-2" />2 days
@@ -320,25 +392,24 @@ function Packages() {
             </small>
           </div>
           <div className="text-center p-4">
-            <h3 className="mb-0">$249.00</h3>
-            <p>Spot tigers and enjoy a thrilling wildlife safari in the jungle.</p>
+            {/* <h3 className="mb-0">₹249.00</h3> */}paceExperience the magic of night camping. Sleep under the stars, listen to nature’s sounds, and wake up to a refreshing morning surrounded by breathtaking outdoor beauty.
             <div className="d-flex justify-content-center mb-2">
-              <a href="#" className="btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: "30px 0 0 30px" }}>Read More</a>
-              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "0 30px 30px 0" }}>Book Now</a>
+            <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "30px" }}>Book Now</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+      <div className="col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay="0.9s">
         <div className="package-item">
           <div className="overflow-hidden">
-            <img className="img-fluid" src="assets/img/desti/Untitled design (9).png" alt="Jungle Safari" />
+            <img className="img-fluid w-100" src="assets/img/ladakh.jpg" alt="Jungle Safari" />
           </div>
           <div className="d-flex border-bottom">
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-map-marker-alt text-primary me-2" />
-              Jim Corbett
+               Bike Riding
+
             </small>
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-calendar-alt text-primary me-2" />2 days
@@ -348,25 +419,23 @@ function Packages() {
             </small>
           </div>
           <div className="text-center p-4">
-            <h3 className="mb-0">$249.00</h3>
-            <p>Spot tigers and enjoy a thrilling wildlife safari in the jungle.</p>
-            <div className="d-flex justify-content-center mb-2">
-              <a href="#" className="btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: "30px 0 0 30px" }}>Read More</a>
-              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "0 30px 30px 0" }}>Book Now</a>
+            {/* <h3 className="mb-0">₹249.00</h3> */}
+<p>Feel the freedom of bike riding through scenic routes. Enjoy thrilling rides on mountain trails or winding highways, and embrace the adventure with every turn and breeze.</p>            <div className="d-flex justify-content-center mb-2">
+            <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "30px" }}>Book Now</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+      <div className="col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay="0.11s">
         <div className="package-item">
           <div className="overflow-hidden">
-            <img className="img-fluid" src="assets/img/desti/Untitled design (10).png" alt="Jungle Safari" />
+            <img className="img-fluid w-100" src="assets/img/desti/Untitled design (10).png" alt="Jungle Safari" />
           </div>
           <div className="d-flex border-bottom">
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-map-marker-alt text-primary me-2" />
-              Jim Corbett
+              Rafting
             </small>
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-calendar-alt text-primary me-2" />2 days
@@ -376,25 +445,24 @@ function Packages() {
             </small>
           </div>
           <div className="text-center p-4">
-            <h3 className="mb-0">$249.00</h3>
-            <p>Spot tigers and enjoy a thrilling wildlife safari in the jungle.</p>
-            <div className="d-flex justify-content-center mb-2">
-              <a href="#" className="btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: "30px 0 0 30px" }}>Read More</a>
-              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "0 30px 30px 0" }}>Book Now</a>
+            {/* <h3 className="mb-0">₹249.00</h3> */}
+<p>Navigate through the thrilling rapids in an exciting rafting adventure. Conquer the wild waters, splash through waves, and bond with fellow adventurers on this high-energy experience.</p> 
+           <div className="d-flex justify-content-center mb-2">
+            <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "30px" }}>Book Now</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+      <div className="col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay="0.13s">
         <div className="package-item">
           <div className="overflow-hidden">
-            <img className="img-fluid" src="assets/img/desti/Untitled design (11).png" alt="Jungle Safari" />
+            <img className="img-fluid w-100" src="assets/img/desti/Untitled design (11).png" alt="Jungle Safari" />
           </div>
           <div className="d-flex border-bottom">
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-map-marker-alt text-primary me-2" />
-              Jim Corbett
+              Paragliding
             </small>
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-calendar-alt text-primary me-2" />2 days
@@ -404,24 +472,24 @@ function Packages() {
             </small>
           </div>
           <div className="text-center p-4">
-            <h3 className="mb-0">$249.00</h3>
-            <p>Spot tigers and enjoy a thrilling wildlife safari in the jungle.</p>
-            <div className="d-flex justify-content-center mb-2">
-              <a href="#" className="btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: "30px 0 0 30px" }}>Read More</a>
-              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "0 30px 30px 0" }}>Book Now</a>
+            {/* <h3 className="mb-0">₹249.00</h3> */}
+            <p>Soar high above stunning landscapes while paragliding. Experience the thrill of flight, gliding over mountains, valleys, and lakes for an unforgettable aerial adventure in breathtaking surroundings.</p>
+                        <div className="d-flex justify-content-center mb-2">
+              
+              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "30px" }}>Book Now</a>
             </div>
           </div>
         </div>
       </div>
-      <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+      <div className="col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay="0.14s">
         <div className="package-item">
           <div className="overflow-hidden">
-            <img className="img-fluid" src="assets/img/desti/Untitled design (12).png" alt="Jungle Safari" />
+            <img className="img-fluid w-100" src="assets/img/desti/Untitled design (12).png" alt="Jungle Safari" />
           </div>
           <div className="d-flex border-bottom">
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-map-marker-alt text-primary me-2" />
-              Jim Corbett
+              Camel Riding
             </small>
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-calendar-alt text-primary me-2" />2 days
@@ -431,25 +499,24 @@ function Packages() {
             </small>
           </div>
           <div className="text-center p-4">
-            <h3 className="mb-0">$249.00</h3>
-            <p>Spot tigers and enjoy a thrilling wildlife safari in the jungle.</p>
+            {/* <h3 className="mb-0">₹249.00</h3> */}
+           <p>Explore the desert on a peaceful camel ride. Traverse golden dunes, enjoy mesmerizing sunsets, and immerse yourself in the calm beauty of the desert landscape at your own pace.</p>
             <div className="d-flex justify-content-center mb-2">
-              <a href="#" className="btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: "30px 0 0 30px" }}>Read More</a>
-              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "0 30px 30px 0" }}>Book Now</a>
+            <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "30px" }}>Book Now</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+      <div className="col-lg-4 col-md-6 wow fadeInUp d-flex" data-wow-delay="0.15s">
         <div className="package-item">
           <div className="overflow-hidden">
-            <img className="img-fluid" src="assets/img/desti/Untitled design (13).png" alt="Jungle Safari" />
+            <img className="img-fluid w-100" src="assets/img/desti/Untitled design (13).png" alt="Jungle Safari" />
           </div>
           <div className="d-flex border-bottom">
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-map-marker-alt text-primary me-2" />
-              Jim Corbett
+              Shikara
             </small>
             <small className="flex-fill text-center border-end py-2">
               <i className="fa fa-calendar-alt text-primary me-2" />2 days
@@ -459,11 +526,10 @@ function Packages() {
             </small>
           </div>
           <div className="text-center p-4">
-            <h3 className="mb-0">$249.00</h3>
-            <p>Spot tigers and enjoy a thrilling wildlife safari in the jungle.</p>
+            {/* <h3 className="mb-0">₹249.00</h3> */}
+            <p>Glide peacefully over Dal Lake in a traditional Shikara. Enjoy panoramic views of snow-capped mountains, floating gardens, and houseboats while soaking in the tranquil atmosphere of Kashmir.</p>
             <div className="d-flex justify-content-center mb-2">
-              <a href="#" className="btn btn-sm btn-primary px-3 border-end" style={{ borderRadius: "30px 0 0 30px" }}>Read More</a>
-              <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "0 30px 30px 0" }}>Book Now</a>
+            <a href="#" className="btn btn-sm btn-primary px-3" style={{ borderRadius: "30px" }}>Book Now</a>
             </div>
           </div>
         </div>
@@ -480,244 +546,204 @@ function Packages() {
     </div>
        <OwlCarousel className="owl-theme" {...options}>
        <div className="package-item">
-                   <div className="overflow-hidden">
-                     <img className="img-fluid" src="assets/img/ayodhya.jpg" alt="" style={{height:"235px"}} />
-                   </div>
-                   <div className="d-flex border-bottom">
-                     <small className="flex-fill text-center border-end py-2">
-                       <i className="fa fa-map-marker-alt text-primary me-2" />
-                       Thailand
-                     </small>
-                     <small className="flex-fill text-center border-end py-2">
-                       <i className="fa fa-calendar-alt text-primary me-2" />3 days
-                     </small>
-                     <small className="flex-fill text-center py-2">
-                       <i className="fa fa-user text-primary me-2" />2 Person
-                     </small>
-                   </div>
-                   <div className="text-center p-4">
-                     <h3 className="mb-0">$149.00</h3>
-                     <div className="mb-3">
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                     </div>
-                     <p>
-                       Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
-                       diam amet diam eos
-                     </p>
-                     <div className="d-flex justify-content-center mb-2">
-                       <a
-                         href="#"
-                         className="btn btn-sm btn-primary px-3 border-end"
-                         style={{ borderRadius: "30px 0 0 30px" }}
-                       >
-                         Read More
-                       </a>
-                       <a
-                         href="#"
-                         className="btn btn-sm btn-primary px-3"
-                         style={{ borderRadius: "0 30px 30px 0" }}
-                       >
-                         Book Now
-                       </a>
-                     </div>
-                   </div>
-                 </div>
-   
-                 <div className="package-item">
-                   <div className="overflow-hidden">
-                     <img className="img-fluid" src="assets/img/badrinath.webp" alt=""  style={{height:"235px"}} />
-                   </div>
-                   <div className="d-flex border-bottom">
-                     <small className="flex-fill text-center border-end py-2">
-                       <i className="fa fa-map-marker-alt text-primary me-2" />
-                       Thailand
-                     </small>
-                     <small className="flex-fill text-center border-end py-2">
-                       <i className="fa fa-calendar-alt text-primary me-2" />3 days
-                     </small>
-                     <small className="flex-fill text-center py-2">
-                       <i className="fa fa-user text-primary me-2" />2 Person
-                     </small>
-                   </div>
-                   <div className="text-center p-4">
-                     <h3 className="mb-0">$149.00</h3>
-                     <div className="mb-3">
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                     </div>
-                     <p>
-                       Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
-                       diam amet diam eos
-                     </p>
-                     <div className="d-flex justify-content-center mb-2">
-                       <a
-                         href="#"
-                         className="btn btn-sm btn-primary px-3 border-end"
-                         style={{ borderRadius: "30px 0 0 30px" }}
-                       >
-                         Read More
-                       </a>
-                       <a
-                         href="#"
-                         className="btn btn-sm btn-primary px-3"
-                         style={{ borderRadius: "0 30px 30px 0" }}
-                       >
-                         Book Now
-                       </a>
-                     </div>
-                   </div>
-                 </div>
-   
-                 <div className="package-item">
-                   <div className="overflow-hidden">
-                     <img className="img-fluid" src="assets/img/bnaraas.png" alt=""   style={{height:"235px"}}/>
-                   </div>
-                   <div className="d-flex border-bottom">
-                     <small className="flex-fill text-center border-end py-2">
-                       <i className="fa fa-map-marker-alt text-primary me-2" />
-                       Thailand
-                     </small>
-                     <small className="flex-fill text-center border-end py-2">
-                       <i className="fa fa-calendar-alt text-primary me-2" />3 days
-                     </small>
-                     <small className="flex-fill text-center py-2">
-                       <i className="fa fa-user text-primary me-2" />2 Person
-                     </small>
-                   </div>
-                   <div className="text-center p-4">
-                     <h3 className="mb-0">$149.00</h3>
-                     <div className="mb-3">
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                     </div>
-                     <p>
-                       Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
-                       diam amet diam eos
-                     </p>
-                     <div className="d-flex justify-content-center mb-2">
-                       <a
-                         href="#"
-                         className="btn btn-sm btn-primary px-3 border-end"
-                         style={{ borderRadius: "30px 0 0 30px" }}
-                       >
-                         Read More
-                       </a>
-                       <a
-                         href="#"
-                         className="btn btn-sm btn-primary px-3"
-                         style={{ borderRadius: "0 30px 30px 0" }}
-                       >
-                         Book Now
-                       </a>
-                     </div>
-                   </div>
-                 </div>
-   
-                 <div className="package-item">
-                   <div className="overflow-hidden">
-                     <img className="img-fluid" src="assets/img/Dwaraka (1).jpg" alt=""  style={{height:"235px"}} />
-                   </div>
-                   <div className="d-flex border-bottom">
-                     <small className="flex-fill text-center border-end py-2">
-                       <i className="fa fa-map-marker-alt text-primary me-2" />
-                       Thailand
-                     </small>
-                     <small className="flex-fill text-center border-end py-2">
-                       <i className="fa fa-calendar-alt text-primary me-2" />3 days
-                     </small>
-                     <small className="flex-fill text-center py-2">
-                       <i className="fa fa-user text-primary me-2" />2 Person
-                     </small>
-                   </div>
-                   <div className="text-center p-4">
-                     <h3 className="mb-0">$149.00</h3>
-                     <div className="mb-3">
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                     </div>
-                     <p>
-                       Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
-                       diam amet diam eos
-                     </p>
-                     <div className="d-flex justify-content-center mb-2">
-                       <a
-                         href="#"
-                         className="btn btn-sm btn-primary px-3 border-end"
-                         style={{ borderRadius: "30px 0 0 30px" }}
-                       >
-                         Read More
-                       </a>
-                       <a
-                         href="#"
-                         className="btn btn-sm btn-primary px-3"
-                         style={{ borderRadius: "0 30px 30px 0" }}
-                       >
-                         Book Now
-                       </a>
-                     </div>
-                   </div>
-                 </div>
-   
-                 <div className="package-item">
-                   <div className="overflow-hidden">
-                     <img className="img-fluid" src="assets/img/kedarnath.jpg" alt=""  style={{height:"235px"}} />
-                   </div>
-                   <div className="d-flex border-bottom">
-                     <small className="flex-fill text-center border-end py-2">
-                       <i className="fa fa-map-marker-alt text-primary me-2" />
-                       Thailand
-                     </small>
-                     <small className="flex-fill text-center border-end py-2">
-                       <i className="fa fa-calendar-alt text-primary me-2" />3 days
-                     </small>
-                     <small className="flex-fill text-center py-2">
-                       <i className="fa fa-user text-primary me-2" />2 Person
-                     </small>
-                   </div>
-                   <div className="text-center p-4">
-                     <h3 className="mb-0">$149.00</h3>
-                     <div className="mb-3">
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                       <small className="fa fa-star text-primary" />
-                     </div>
-                     <p>
-                       Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit
-                       diam amet diam eos
-                     </p>
-                     <div className="d-flex justify-content-center mb-2">
-                       <a
-                         href="#"
-                         className="btn btn-sm btn-primary px-3 border-end"
-                         style={{ borderRadius: "30px 0 0 30px" }}
-                       >
-                         Read More
-                       </a>
-                       <a
-                         href="#"
-                         className="btn btn-sm btn-primary px-3"
-                         style={{ borderRadius: "0 30px 30px 0" }}
-                       >
-                         Book Now
-                       </a>
-                     </div>
-                   </div>
-                 </div>
+              <div className="overflow-hidden">
+                <img className="img-fluid w-100" src="assets/img/ayodhya.jpg" alt="" style={{ height: "235px" }} />
+              </div>
+              <div className="d-flex border-bottom">
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-map-marker-alt text-primary me-2" />
+                 Ayodhya
+                </small>
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-calendar-alt text-primary me-2" />3 days
+                </small>
+                <small className="flex-fill text-center py-2">
+                  <i className="fa fa-user text-primary me-2" />2 Person
+                </small>
+              </div>
+              <div className="text-center p-4">
+                {/* <h3 className="mb-0">₹149.00</h3> */}
+                <div className="mb-3">
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                </div>
+                <p>
+                Explore the sacred city of Ayodhya with Raghuwanshi Travel. Visit the Ram Janmabhoomi, Hanuman Garhi, and immerse yourself in the spiritual essence of this holy land.
+                </p>
+                <div className="d-flex justify-content-center mb-2">
+                <a
+                    href="#"
+                    className="btn btn-sm btn-primary px-3"
+                    style={{ borderRadius: "30px" }}
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="package-item">
+              <div className="overflow-hidden">
+                <img className="img-fluid w-100" src="assets/img/badrinath.webp" alt="" style={{ height: "235px" }} />
+              </div>
+              <div className="d-flex border-bottom">
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-map-marker-alt text-primary me-2" />
+                  Badrinath
+                </small>
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-calendar-alt text-primary me-2" />3 days
+                </small>
+                <small className="flex-fill text-center py-2">
+                  <i className="fa fa-user text-primary me-2" />2 Person
+                </small>
+              </div>
+              <div className="text-center p-4">
+                {/* <h3 className="mb-0">₹149.00</h3> */}
+                <div className="mb-3">
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                </div>
+                <p>
+                Embark on a divine journey to Badrinath with Raghuwanshi Travel. Seek blessings at the Badrinath Temple while enjoying the serene beauty of the Himalayas and Alaknanda river.
+                </p>
+                <div className="d-flex justify-content-center mb-2">
+                <a
+                    href="#"
+                    className="btn btn-sm btn-primary px-3"
+                    style={{ borderRadius: "30px" }}
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="package-item">
+              <div className="overflow-hidden">
+                <img className="img-fluid w-100" src="assets/img/bnaraas.png" alt="" style={{ height: "235px" }} />
+              </div>
+              <div className="d-flex border-bottom">
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-map-marker-alt text-primary me-2" />
+                  Kashi
+                </small>
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-calendar-alt text-primary me-2" />3 days
+                </small>
+                <small className="flex-fill text-center py-2">
+                  <i className="fa fa-user text-primary me-2" />2 Person
+                </small>
+              </div>
+              <div className="text-center p-4">
+                {/* <h3 className="mb-0">₹149.00</h3> */}
+                <div className="mb-3">
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                </div>
+                <p>
+                Dive into spirituality in Kashi with Raghuwanshi Travel. Witness the Ganga Aarti, explore ancient temples, and experience the divine energy of Varanasi’s ghats.
+                </p>
+                <div className="d-flex justify-content-center mb-2">
+                <a
+                    href="#"
+                    className="btn btn-sm btn-primary px-3"
+                    style={{ borderRadius: "30px" }}
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="package-item">
+              <div className="overflow-hidden">
+                <img className="img-fluid w-100" src="assets/img/Dwaraka (1).jpg" alt="" style={{ height: "235px" }} />
+              </div>
+              <div className="d-flex border-bottom">
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-map-marker-alt text-primary me-2" />
+                  Dwarka
+                </small>
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-calendar-alt text-primary me-2" />3 days
+                </small>
+                <small className="flex-fill text-center py-2">
+                  <i className="fa fa-user text-primary me-2" />2 Person
+                </small>
+              </div>
+              <div className="text-center p-4">
+                {/* <h3 className="mb-0">₹149.00</h3> */}
+                <div className="mb-3">
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                </div>
+                <p>
+                Visit the legendary Dwarkadhish Temple with Raghuwanshi Travel. Experience Lord Krishna’s divine abode, serene beaches, and  embrace the vibrant spirituality of this holy city.
+                </p>
+                <div className="d-flex justify-content-center mb-2">
+                <a
+                    href="#"
+                    className="btn btn-sm btn-primary px-3"
+                    style={{ borderRadius: "30px" }}
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div className="package-item">
+              <div className="overflow-hidden">
+                <img className="img-fluid w-100" src="assets/img/kedarnath.jpg" alt="" style={{ height: "235px" }} />
+              </div>
+              <div className="d-flex border-bottom">
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-map-marker-alt text-primary me-2" />
+                 Kedarnath
+                </small>
+                <small className="flex-fill text-center border-end py-2">
+                  <i className="fa fa-calendar-alt text-primary me-2" />3 days
+                </small>
+                <small className="flex-fill text-center py-2">
+                  <i className="fa fa-user text-primary me-2" />2 Person
+                </small>
+              </div>
+              <div className="text-center p-4">
+                {/* <h3 className="mb-0">₹149.00</h3> */}
+                <div className="mb-3">
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                  <small className="fa fa-star text-primary" />
+                </div>
+                <p>
+                Experience the divine aura of Kedarnath with Raghuwanshi Travel. Trek to the revered temple, witness breathtaking Himalayan views, and seek blessings on this sacred pilgrimage.
+                </p>
+                <div className="d-flex justify-content-center mb-2">
+                <a
+                    href="#"
+                    className="btn btn-sm btn-primary px-3"
+                    style={{ borderRadius: "30px" }}
+                  >
+                    Book Now
+                  </a>
+                </div>
+              </div>
+            </div>
        </OwlCarousel>
      {/* End Spiritual Section */}
 
